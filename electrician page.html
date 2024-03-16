@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Electrician || M.R. Lights</title>
+    <link rel="stylesheet" href="mrlights.css">
+    <style>
+
+.heading {
+max-width: 1080px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
+}
+.title {
+text-align: center;
+margin: 21px auto 0px;
+position: relative;
+line-height: 60px;
+color: #555;
+}
+.title::after {
+content: '';
+background: #0818f5;
+width: 90px;
+height: 5px;
+border-radius: 5px;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+}      
+
+
+
+
+.container{
+
+width:99%;
+/* height: 400px; */
+margin: auto;
+/* background-color: red; */
+margin-top: 10px;
+}
+.electrician-card-row{
+
+/* display: grid; */
+padding: 10px;
+justify-content: center;
+/* grid-template-columns: 1fr 1fr 1fr; */
+gap: 10px;
+display: flex;
+flex-wrap: wrap;
+}
+.card-box{
+box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(0, 0, 0, -0.22) 0px 2px 2px;
+/* border: 1px solid green; */
+background: #ffffff;
+padding: 10px;
+border-radius: 5px;
+min-width: 173px;
+max-width: 361px;
+/* width: 49%; */
+transition: transform 0.5s;
+}
+.card-box:hover{
+    transform: translateY(-10px);
+}
+.info-box{
+display: flex;
+flex-direction: column;
+}
+.el-details{
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+/* align-items: center; */
+margin: 4px 0px;
+padding: 0px 0px 0px 5px;
+text-transform: capitalize;
+font-family: monospace;
+}
+.electrician-img img {
+width: 100%;
+border-radius: 6px;
+max-width: 200px;
+}
+.electrician-name h1{
+    font-size: 17px;
+    color: #373333;
+    font-style: normal;
+    font-weight: 100;
+}
+.electrician-contact-box.second-box {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-top: 10px;
+}
+.electrician-contact-box button{
+/* width: 85%; */
+/* margin-top: 13px; */
+/* padding: 8px; */
+
+background-color: transparent;
+border: none;
+color: black;
+border-radius: 5px;
+} 
+
+
+.contact-box.second-box img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+@media screen and (min-width:850px){
+.electrician-card-row{
+    column-gap: 20px;
+}
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 5px;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    /* -webkit-font-feature-settings: 'liga'; */
+    -webkit-font-smoothing: antialiased;
+}
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="logo">
+        <img src="images/exq.png" width="185px">
+        </div>
+        <nav>
+        <ul id="menuitems" style="max-height: 0px;">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Product page.html">PRODUCTS</a></li>
+            <li><a href="electrician page.html">ELECTRICIAN</a></li>
+            <li><a href="#">CONTACT</a></li> 	
+            <li><a href="#">ACCOUNT</a></li>
+        </ul>
+        </nav>
+        
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        
+        </div>
+<!-- slider section  -->
+        <!-- <div class="slider">
+            <img src="images/slider_13.jpg" alt="">
+            </div> -->
+                                                <!---About us--->
+
+<!-- <section class="tours">
+
+    <div class="row-events">
+       <div class="col content-col">
+        <h1>About Us</h1>
+         <div class="line"></div>
+        <p>  lorem ipsum doller lorium doller lorem ipsum doller lorium doller lorem ipsum doller lorium doller lorem ipsum ipsum vlorem ipsum doller lorium dollerlorem ipsum doller lorium dollerlorem ipsum ipsum vlorem ipsum doller lorium dollerlorem ipsum doller lorium doller</p>
+      </div>
+     <div class="col image-col">
+      <div class="image-gallery" style="width: auto;">
+            <img src="images/Daco_5901538.png"/>
+            <img src="images/Daco_5900956 (1).png"/> 
+     </div>
+     </div>
+    </div>
+   </section> -->
+
+   
+               <!-- door bell section header -->
+            
+               <div id="con" class="contact" style="margin-bottom: 0px; height: auto;">
+                <div class="cont-heading">
+                    <h3 class="red" style="color: rgb(43, 41, 41);"> Hire Electrician</h3>
+                    <p>
+                        We're located in San Pedro on Pacific Avenue and 18th street. Feel free to stop by for any
+                        questions or give us a call. Our phone number is: (310) 833 - 4188. We accept cash and credit cards.
+                    </p>
+                </div>
+                
+               </div>
+      
+                                         <!-- ELECTRICIAN -->
+<div class="heading"><h2 class="title">HIRE ELECTRICIAN</h2></div>
+<div class="container">
+    <div class="electrician-card-row">
+    <div class="card-box"> 
+         <div class="info-box first-box">
+              <div class="electrician-img"><img src="images/category-3.jpg"></div>
+              <div class="el-details">
+                  <div class="electrician-name">
+                <h1 style="display: flex; align-items: center;">
+                    <span class="material-symbols-outlined">
+                person
+                </span>hash gehlot</h1></div>
+        <div class="location">
+            <p style="display: flex; align-items: center;">
+            <span class="material-symbols-outlined">
+            location_on
+            </span>balotra</p></div>
+        </div>
+      
+         </div>
+     
+        <hr style="margin-top: 8px;">
+   <div class="electrician-contact-box second-box">  <span class="material-symbols-outlined">
+    call
+    </span><button>Call</button></div>
+    </div>
+    <div class="card-box"> 
+        <div class="info-box first-box">
+             <div class="electrician-img"><img src="images/category-3.jpg"></div>
+             <div class="el-details">
+                 <div class="electrician-name">
+               <h1 style="display: flex; align-items: center;">
+                   <span class="material-symbols-outlined">
+               person
+               </span>hash gehlot</h1></div>
+       <div class="location">
+           <p style="display: flex; align-items: center;">
+           <span class="material-symbols-outlined">
+           location_on
+           </span>balotra</p></div>
+       </div>
+     
+        </div>
+    
+       <hr style="margin-top: 8px;">
+  <div class="electrician-contact-box second-box">  <span class="material-symbols-outlined">
+   call
+   </span><button>Call</button></div>
+   </div>
+   <div class="card-box"> 
+    <div class="info-box first-box">
+         <div class="electrician-img"><img src="images/category-3.jpg"></div>
+         <div class="el-details">
+             <div class="electrician-name">
+           <h1 style="display: flex; align-items: center;">
+               <span class="material-symbols-outlined">
+           person
+           </span>hash gehlot</h1></div>
+   <div class="location">
+       <p style="display: flex; align-items: center;">
+       <span class="material-symbols-outlined">
+       location_on
+       </span>balotra</p></div>
+   </div>
+ 
+    </div>
+
+   <hr style="margin-top: 8px;">
+<div class="electrician-contact-box second-box">  <span class="material-symbols-outlined">
+call
+</span><button>Call</button></div>
+</div>
+<div class="card-box"> 
+    <div class="info-box first-box">
+         <div class="electrician-img"><img src="images/category-3.jpg"></div>
+         <div class="el-details">
+             <div class="electrician-name">
+           <h1 style="display: flex; align-items: center;">
+               <span class="material-symbols-outlined">
+           person
+           </span>hash gehlot</h1></div>
+   <div class="location">
+       <p style="display: flex; align-items: center;">
+       <span class="material-symbols-outlined">
+       location_on
+       </span>balotra</p></div>
+   </div>
+ 
+    </div>
+
+   <hr style="margin-top: 8px;">
+<div class="electrician-contact-box second-box">  <span class="material-symbols-outlined">
+call
+</span><button>Call</button></div>
+</div>
+<div class="card-box"> 
+    <div class="info-box first-box">
+         <div class="electrician-img"><img src="images/category-3.jpg"></div>
+         <div class="el-details">
+             <div class="electrician-name">
+           <h1 style="display: flex; align-items: center;">
+               <span class="material-symbols-outlined">
+           person
+           </span>hash gehlot</h1></div>
+   <div class="location">
+       <p style="display: flex; align-items: center;">
+       <span class="material-symbols-outlined">
+       location_on
+       </span>balotra</p></div>
+   </div>
+ 
+    </div>
+
+   <hr style="margin-top: 8px;">
+<div class="electrician-contact-box second-box">  <span class="material-symbols-outlined">
+call
+</span><button>Call</button></div>
+</div>
+<div class="card-box"> 
+    <div class="info-box first-box">
+         <div class="electrician-img"><img src="images/category-3.jpg"></div>
+         <div class="el-details">
+             <div class="electrician-name">
+           <h1 style="display: flex; align-items: center;">
+               <span class="material-symbols-outlined">
+           person
+           </span>hash gehlot</h1></div>
+   <div class="location">
+       <p style="display: flex; align-items: center;">
+       <span class="material-symbols-outlined">
+       location_on
+       </span>balotra</p></div>
+   </div>
+ 
+    </div>
+
+   <hr style="margin-top: 8px;">
+<div class="electrician-contact-box second-box">  <span class="material-symbols-outlined">
+call
+</span><button>Call</button></div>
+</div>
+<div class="card-box"> 
+    <div class="info-box first-box">
+         <div class="electrician-img"><img src="images/category-3.jpg"></div>
+         <div class="el-details">
+             <div class="electrician-name">
+           <h1 style="display: flex; align-items: center;">
+               <span class="material-symbols-outlined">
+           person
+           </span>hash gehlot</h1></div>
+   <div class="location">
+       <p style="display: flex; align-items: center;">
+       <span class="material-symbols-outlined">
+       location_on
+       </span>balotra</p></div>
+   </div>
+ 
+    </div>
+
+   <hr style="margin-top: 8px;">
+<div class="electrician-contact-box second-box">  <span class="material-symbols-outlined">
+call
+</span><button>Call</button></div>
+</div>
+<div class="card-box"> 
+    <div class="info-box first-box">
+         <div class="electrician-img"><img src="images/category-3.jpg"></div>
+         <div class="el-details">
+             <div class="electrician-name">
+           <h1 style="display: flex; align-items: center;">
+               <span class="material-symbols-outlined">
+           person
+           </span>hash gehlot</h1></div>
+   <div class="location">
+       <p style="display: flex; align-items: center;">
+       <span class="material-symbols-outlined">
+       location_on
+       </span>balotra</p></div>
+   </div>
+ 
+    </div>
+
+   <hr style="margin-top: 8px;">
+<div class="electrician-contact-box second-box">  <span class="material-symbols-outlined">
+call
+</span><button>Call</button></div>
+</div>
+<div class="card-box"> 
+    <div class="info-box first-box">
+         <div class="electrician-img"><img src="images/category-3.jpg"></div>
+         <div class="el-details">
+             <div class="electrician-name">
+           <h1 style="display: flex; align-items: center;">
+               <span class="material-symbols-outlined">
+           person
+           </span>hash gehlot</h1></div>
+   <div class="location">
+       <p style="display: flex; align-items: center;">
+       <span class="material-symbols-outlined">
+       location_on
+       </span>balotra</p></div>
+   </div>
+ 
+    </div>
+
+   <hr style="margin-top: 8px;">
+<div class="electrician-contact-box second-box">  <span class="material-symbols-outlined">
+call
+</span><button>Call</button></div>
+</div>
+        </div>
+        </div>
+
+        
+                
+<!----***************************** Contact Us *****************************-->
+
+ <div id="con" class="contact">
+    <div class="cont-heading">
+        <h3 class="red">Contact Us</h3>
+        <p>
+            We're located in San Pedro on Pacific Avenue and 18th street. Feel free to stop by for any
+            questions or give us a call. Our phone number is: (310) 833 - 4188. We accept cash and credit cards.
+        </p>
+    </div>
+    <div class="contentShow">
+        <div id="shop" class="showBox">
+            <img src="images/download.jpg" alt="front pic">
+        </div>
+        <div id="map" class="showBox">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14363.379568017073!2d72.2502098!3d25.8416559!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3943e94f309bbb27%3A0x5709f675e8d77ae9!2sM.R%20Lights%20Goldmedal!5e0!3m2!1sen!2sin!4v1709203092475!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </iframe>
+        </div>
+    </div>
+  </div>
+
+
+          <!--footer-->
+
+<div class="footer">
+
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-col-2">
+            <img src="file:///C:/Users/mukesh/Desktop/ps%20motor/footerlogo.png"/>
+            <p>Our Purpose Is To Sustainably Make the Pleasure and
+            Benifits of Sports Accessible to the Many. </p>
+            </div>
+          
+         <!--  <div class="footer-col-4">
+            <h3>FOOLOW Us</h3>
+            <ul>
+                <li>facebook</li>
+                <li>twitter</li>
+                <li>instagram</li>
+                <li>youtube</li>
+            </ul>
+            </div>-->
+        </div>
+            <hr/>
+             <p class="copyright">copyright 2023 Depak Gahlot</p>
+    </div>
+    </div>
+    
+<!--js for toggle-->
+<script> 
+	var menuitems=document.getElementById("menuitems");
+	
+	menuitems.style.maxHeight="0px";
+	
+	function menutoggle(){
+	    if(menuitems.style.maxHeight=="0px")
+		{
+			menuitems.style.maxHeight="400px"
+		}
+	    else
+		{
+			menuitems.style.maxHeight="0px"
+		}
+	}
+</script>
+</body>
+</html>

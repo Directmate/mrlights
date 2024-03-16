@@ -1,0 +1,282 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="mrlights.css">
+<title>WELCOME TO FLIPKART||</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Nunito+Sans:ital,wght@1,600&family=Oswald:wght@200;400&family=Rajdhani:wght@700&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Teko&family=Ubuntu:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0px;
+padding:0px;
+}
+
+.box{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+margin: 20px;
+
+}
+.image-box img{
+  width: 100%;
+ height: 100%;
+}
+.content-box{
+ /*padding: 10px;*/
+  display: flex;
+  /*align-items: center;*/
+  flex-direction: column;
+}
+.content-box h3{
+ margin-top:5px;
+font-size:20px ;
+
+}
+.content-box .pricetag{
+ margin-top: 8px; 
+ margin-bottom:10px ;
+font-family: 'Nunito Sans', sans-serif;
+}
+.content-box p{
+  margin-top:15px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+.content-box li p{
+  margin-top: 5px;
+  margin-left: 5px;
+  
+}
+.content-box h4{
+font-family: 'Ubuntu', sans-serif;
+margin-top: 10px;
+color: #696969;
+}
+.content-box ul{
+  margin-left: 0px;
+padding: 0;
+}
+
+.content-box li{
+list-style-type:disc;
+padding: 0px;
+margin-bottom: 0px;
+margin-left: 30px;
+
+}
+input{
+  padding: 10px;
+  height: 40px;
+  outline:none;
+  border-radius:10px;
+  border:none;
+  background:#342c2c;
+  transition:background 0.5s;
+  color: whitesmoke;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 10px 10px 0px 10px;
+}
+input:hover{
+
+background:#cacaca;
+color: black;
+}
+
+
+
+
+.categories{
+margin:70px 0;
+}
+
+
+
+.col-3{
+flex-basis:30%;
+min-width:250px;
+margin-bottom:30px;
+
+}
+.col-3 img{
+width:100%;
+
+}
+.small-container{
+max-width:1080px;
+margin:auto;
+padding-left:25px;
+padding-right:25px;
+  
+}
+.categories-row{
+display:flex;
+align-items:center;
+flex-wrap:wrap;
+justify-content:space-around;
+}
+
+@media only screen and (min-width:800px){
+ .box{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 10px;
+ }
+ 
+}
+
+
+
+</style>
+</head>
+<body>
+           <!-- navbar -->
+    <div class="navbar">
+      <div class="logo">
+      <img src="images/exq.png" width="185px">
+      </div>
+      <nav>
+      <ul id="menuitems" style="max-height: 0px;">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Product page.html">PRODUCTS</a></li>
+          <li><a href="electrician page.html">ELECTRICIAN</a></li>
+          <li><a href="#">CONTACT</a></li> 	
+          <li><a href="#">ACCOUNT</a></li>
+      </ul>
+      </nav>
+      
+      <img src="images/cart.png" width="30px" height="30px">
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+      
+      </div>
+
+<!--main box-->
+<div class="box">
+  <div class="image-box">
+    <img src="images/2-Pin-Twister.jpg">
+  </div>
+  <div class="content-box">
+    <h4>M.R Lights</h4>
+
+      <h3>Flex BOX goldmedal</h3>
+    <p class="pricetag">Price ₹500</p>
+    <hr/>
+    <h4>Summery</h4>
+     <p>lorem ipsum doller lorem ipsum dlooer foller doleb ipsum ipsum doller lorem ipsum doller </p>
+     <ul>
+       <li><p>lorem ipsum doler lorem</p></li>
+<li><p>lorem ipsum doler lorem</p></li>
+<li><p>lorem ipsum doler lorem</p></li>
+<li><p>lorem ipsum doler lorem</p></li>
+     </ul>
+     
+     <p>lorem ipsum doller lorem ipsum dlooer foller doleb ipsum</p>
+     <input type="button" Value="Buy Now">
+</div>
+</div>
+    <!-----featured categories----->
+
+<div class=categories>
+
+<div class="small-container">
+<div class="categories-row">
+<div class="col-3">
+<img src="images/Universal-Trqavel-Adaptor.6181.jpg">
+</div>
+<div class="col-3">
+<img src="images/360_Spike_all_in_One.7281.jpg">
+</div>
+<div class="col-3">
+  <video src="C:\Users\mukesh\Downloads/WhatsApp Video 2023-01-17 at 9.39.19 PM.mp4"
+  type="video/mp4" class="vid" loop style="width: 100%;">
+     </video>
+</div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<!-- footer section 
+<div class="footer">
+  <div class="container">
+    <div class="row">
+            <div class="footer-col-1">
+      <h3>Downlod Our App</h3>
+      <p> Downlod App for Android and ios mobil phone.</p>
+      <div class="app-logo">
+        <img src="imagess/play-store.png">
+        <img src="imagess/app-store.png">
+      </div>
+        </div>
+        <div class="footer-col-2">
+      <img src="images/user-5.png">
+      <p>Our Purpose Is To Sustainably Make the Pleasure and
+      Benifits of Sports Accessible to the Many. </p>
+        </div>
+        <div class="footer-col-3">
+      <h3>useful Links</h3>
+      <ul class="footerlist">
+        <li>Coupons</li>
+        <li>Blog Post</li>
+        <li>Return Policy</li>
+        <li>Join Affiliate</li>
+      </ul>
+        </div>
+        <div class="footer-col-4">
+      <h3>FOOLOW Us</h3>
+      <ul class="footerlist">
+        <li>facebook</li>
+        <li>twitter</li>
+        <li>instagram</li>
+        <li>youtube</li>
+      </ul>
+        </div>
+    </div>
+      <hr>
+         <p class="copyright">copyright 2020-M.R.Light</p>
+  </div>
+  </div>-->
+
+     <!--js for toggle-->
+     <script> 
+      var menuitems=document.getElementById("menuitems");
+      
+      menuitems.style.maxHeight="0px";
+      
+      function menutoggle(){
+          if(menuitems.style.maxHeight=="0px")
+          {
+              menuitems.style.maxHeight="400px"
+          }
+          else
+          {
+              menuitems.style.maxHeight="0px"
+          }
+      }
+
+
+
+
+  // Listening to the video element
+  let clip = document.querySelector(".vid")
+
+/* Adding the event listeners on the video to play/pause the video. */
+clip.addEventListener("mouseover", function (e) {
+   clip.play();
+})
+
+/* Applying the mouse out event to pause the video */
+clip.addEventListener("mouseout", function (e) {
+   clip.pause();
+})
+</script> 
+</body>
+</html>
