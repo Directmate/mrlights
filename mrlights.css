@@ -752,7 +752,7 @@ body , html{
    /* whatsapp logo  */
    .whatsapp-logo{
     bottom: 11%;
-    right: 8%;
+    right: 4%;
     position: fixed;
     z-index: 1;
    }
